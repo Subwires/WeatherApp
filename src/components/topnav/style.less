@@ -1,0 +1,102 @@
+@import '~style/helpers';
+
+.container{
+	position: relative;
+	top: 0;
+	height: 70px;
+    width: 414px;
+	padding: 0;
+	background: #274a96;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.buttonleft {
+	float: left;
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 15px;
+	min-width: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	background: #274a96;
+	color: #EEE;
+	will-change: background-color;
+
+	&:hover, &:active {
+		background: #2a76c1;
+	}
+}
+
+.buttonright {
+	float: right;
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 15px;
+	min-width: 50px;
+	font-size: 1.5em;
+	text-align: center;
+	background: #274a96;
+	color: #EEE;
+	will-change: background-color;
+
+	&:hover, &:active {
+		background: #2a76c1;
+	}
+}
+
+
+.input[type=location]{
+	float: left;
+    padding: 8px;
+    min-width: 310px;
+    border: none;
+    margin-top: 19px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+}
+
+.input[type=route]{
+        float: left;
+        padding: 8px;
+        min-width: 346px;
+        border: none;
+        margin-top: 19px;
+        margin-bottom: 12px;
+        margin-left: 15px;
+        border-radius: 15px;
+}
+
+.error{
+	position: absolute;
+	border-radius: 20px;
+	top: 300%;
+	left: 82px;
+	background: white;
+	opacity: 0.95;
+	height: 220px;
+	width: 250px;
+	line-height: 30px;
+	text-align: center;
+	padding-top: 30px;
+
+	okbutton {
+		margin-top: 20px;
+		position: absolute;
+		line-height: 50px;
+		left: 75px;
+		width: 100px;
+		border-style: solid;
+		border-color: #274a96;
+		border-radius: 20px;
+
+		will-change: background-color, color;
+
+		&:hover, &:active {
+			background: #2a76c1;
+			color: #fff;
+		}
+	}
+}

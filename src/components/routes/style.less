@@ -1,0 +1,104 @@
+@import '~style/helpers';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 414px;
+  height: 596px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  background: #274a96;
+  color: #444444;
+
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  border-radius: 10px;
+  background-color: #bdeafc;
+  padding: 10px 10px 14px 10px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+  font-family: "Tahoma", Geneva, sans-serif;
+  color: #444444;
+
+  box-shadow: 1px 2px rgba(137, 236, 251, .75);
+
+
+}
+.gridchild1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+.gridchild2 {
+    display: grid;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+    button-right {
+    color: #444444;
+    font-size: 1.5em;
+
+    &:hover, &:active {
+      background: linear-gradient(to right, transparent, rgba(137, 236, 251, .1), rgba(137, 236, 251, .5), transparent, transparent);
+    }
+  }
+}
+
+.table {
+    float: left;
+    width: 110%;
+    height: 130%;
+    td {
+      text-align: left;
+      width: 50%;
+    }
+}
+
+.starchecked{
+  color: orange;
+}
+
+.starunchecked{
+  opacity: 0.4;
+}
+
+.plusbutton {
+    button-left {
+      float: left;
+      background: #2a76c1;
+      height: 65px;
+	    min-width: 402px;
+      text-align: left;
+      padding: 15px 10px 10px 10px;
+      color: #EEE;
+      will-change: background-color;
+      font-size: 2em;
+      border-radius:10px;
+      margin-bottom:5px;
+      box-shadow: 1px 2px rgba(137, 236, 251, .75);
+
+      &:hover, &:active {
+        background: rgba(137, 236, 251, .5);
+        border-radius:10px;
+        }
+    }
+    text-add {
+      font-size: 0.7em;
+      float: right;
+      margin-left: 10px;
+      margin-top: 3.5px;
+      font-family: 'Roboto', sans-serif;
+
+
+    }
+}
